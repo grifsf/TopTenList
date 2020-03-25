@@ -11,10 +11,11 @@ using std::vector;
 class TopTenList
 {
   private:
-
+  vector<Hyperlink> _list;
   public:
     void set_at(int index, Hyperlink link);
     Hyperlink get(int index);
+    TopTenList();
 };
 
 #endif
