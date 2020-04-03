@@ -22,16 +22,38 @@ Hyperlink TopTenList::get(int index)
 }
 void TopTenList::display_backward()
 {
-  for(int i=9;i>=0;i--)
+  cout << "Hyperlinks" << endl;
+  if(_list.size()==0)
   {
-    cout << _list[i].text << endl;
+    cout << " is empty" << endl;
+  }
+  else
+  {
+    cout << endl;
+  }
+  for(int i=_list.size()-1;i>=0;i--)
+  {
+    cout << i+1 << " of " << _list.size() << " "
+    << _list[i].text << " " 
+    << _list[i].url << endl;
   }
 }
 void TopTenList::display_forward()
 {
-  for(int i=0;i<10;i++)
+  cout << "Emoticon Gallery" << endl;
+  if(_list.size()==0)
   {
-    cout <<_list[i].text << endl;
+    cout << " is empty" << endl;
+  }
+  else
+  {
+    cout << endl;
+  }
+  for(int i=0;i<_list.size();i++)
+  {
+    cout << i+1 << " of " << _list.size() << " "
+    << _list[i].text << " " 
+    << _list[i].url << endl;
   }
 }
 
